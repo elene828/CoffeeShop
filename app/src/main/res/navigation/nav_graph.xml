@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/introFragment">
+    app:startDestination="@id/login_fragment_root">
 
     <fragment
         android:id="@+id/introFragment"
@@ -49,6 +49,27 @@
         android:label="Profile" >
         <action
             android:id="@+id/action_profileFragment_to_introFragment"
+            app:destination="@id/introFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signup_fragment_root"
+        android:name="com.example.coffeeshop.auth.SignupFragment"
+        android:label="Signup" >
+        <action
+            android:id="@+id/action_signup_fragment_root_to_login_fragment_root"
+            app:destination="@id/login_fragment_root" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/login_fragment_root"
+        android:name="com.example.coffeeshop.auth.LoginFragment"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_login_fragment_root_to_signup_fragment_root"
+            app:destination="@id/signup_fragment_root" />
+        <action
+            android:id="@+id/action_login_fragment_root_to_introFragment"
             app:destination="@id/introFragment" />
     </fragment>
 
