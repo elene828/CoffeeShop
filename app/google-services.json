@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "635656362203",
+    "firebase_url": "https://finalur-ele-tatu-default-rtdb.firebaseio.com",
+    "project_id": "finalur-ele-tatu",
+    "storage_bucket": "finalur-ele-tatu.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635656362203:android:da1dfad56d4bfbdc3d94fe",
+        "android_client_info": {
+          "package_name": "com.example.coffeeshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv8LN2xIY3XA_eoHS0pYkrenUoJDCxV0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

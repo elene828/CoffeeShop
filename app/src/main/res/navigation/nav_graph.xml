@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.coffeeshop.ui.IntroFragment"
+        android:label="Intro" >
+        <action
+            android:id="@+id/action_introFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.coffeeshop.ui.home.HomeFragment"
+        android:label="Home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <!-- Optional: Navigate to CartFragment from HomeFragment -->
+        <action
+            android:id="@+id/action_homeFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.coffeeshop.ui.DetailFragment"
+        android:label="Details">
+        <argument
+            android:name="item"
+            app:argType="com.example.coffeeshop.model.ItemsModel"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.coffeeshop.ui.cart.CartFragment"
+        android:label="Cart" />
+
+    <!-- You can add actions from cartFragment if needed -->
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.coffeeshop.ui.ProfileFragment"
+        android:label="Profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_introFragment"
+            app:destination="@id/introFragment" />
+    </fragment>
+
+</navigation>
