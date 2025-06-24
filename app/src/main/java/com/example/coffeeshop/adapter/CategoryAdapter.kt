@@ -33,7 +33,7 @@ class CategoryAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = items[position]
 
-        // Default to "M" if not selected
+
         val currentSize = selectedSizes[position] ?: "M"
         selectedSizes[position] = currentSize
 

@@ -17,7 +17,7 @@ class CartFragment : Fragment(), CartUpdateListener {
 
     private lateinit var managmentCart: ManagmentCart
     private lateinit var cartAdapter: CartAdapter
-    private lateinit var binding: FragmentCartBinding  // assuming ViewBinding
+    private lateinit var binding: FragmentCartBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentCartBinding.inflate(inflater, container, false)

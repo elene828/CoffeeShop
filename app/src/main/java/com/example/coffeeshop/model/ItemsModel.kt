@@ -18,7 +18,7 @@ data class ItemsModel(
     var rating: Double = 0.0,
     var numberInCart: Int = 0,
     var imageURL: String = "",
-    var imageResId: Int = 0  // <-- New field for local drawable resource ID
+    var imageResId: Int = 0
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),

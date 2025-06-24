@@ -12,11 +12,8 @@ class ManagmentCart(
     private val context: Context,
     private val db: AppDatabase
 ) {
-
-    // Listener to notify UI about cart updates
     var cartUpdateListener: CartUpdateListener? = null
 
-    // In-memory cache of cart items
     private val cartList = mutableListOf<ItemsModel>()
 
     init {
@@ -43,12 +40,10 @@ class ManagmentCart(
             synchronized(cartList) {
                 val index = cartList.indexOfFirst { it.title == item.title && it.description == item.description }
                 if (index >= 0) {
-                    // Item exists — increase quantity
                     val existing = cartList[index]
                     existing.numberInCart += if (item.numberInCart > 0) item.numberInCart else 1
                     db.cartDao().update(existing)
                 } else {
-                    // New item — insert with at least quantity 1
                     val newItem = item.copy(numberInCart = if (item.numberInCart > 0) item.numberInCart else 1)
                     db.cartDao().insert(newItem)
                     cartList.add(newItem)
@@ -87,7 +82,6 @@ class ManagmentCart(
                         existing.numberInCart--
                         db.cartDao().update(existing)
                     } else {
-                        // Remove item completely if quantity drops below 1
                         db.cartDao().delete(existing)
                         cartList.removeAt(index)
                     }

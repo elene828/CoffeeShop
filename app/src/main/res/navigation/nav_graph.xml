@@ -20,7 +20,6 @@
         <action
             android:id="@+id/action_homeFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
-        <!-- Optional: Navigate to CartFragment from HomeFragment -->
         <action
             android:id="@+id/action_homeFragment_to_cartFragment"
             app:destination="@id/cartFragment" />
@@ -40,8 +39,6 @@
         android:id="@+id/cartFragment"
         android:name="com.example.coffeeshop.ui.cart.CartFragment"
         android:label="Cart" />
-
-    <!-- You can add actions from cartFragment if needed -->
 
     <fragment
         android:id="@+id/profileFragment"

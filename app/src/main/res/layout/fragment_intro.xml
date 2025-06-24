@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Background Image -->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,7 +11,6 @@
         android:src="@drawable/your_coffee_image"
         android:contentDescription="Background coffee image" />
 
-    <!-- Foreground content -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,7 +27,7 @@
             android:textAlignment="center"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:textColor="@android:color/white" />  <!-- white text for contrast -->
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/getStartedButton"

@@ -15,9 +15,6 @@
         android:orientation="horizontal"
         android:padding="12dp"
         android:gravity="center_vertical">
-
-        <!-- You can add an ImageView here if you want coffee image -->
-
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
