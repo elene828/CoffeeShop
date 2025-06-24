@@ -56,7 +56,7 @@ View Binding: Simplified view references
 bash
 Copy
 Edit
-git clone https://github.com/your-username/coffee-shop-app.git
+git clone https://github.com/elene828/CoffeeShop
 ### Open in Android Studio:
 
 File > Open > Select the project folder
