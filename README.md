@@ -6,51 +6,42 @@ Welcome to Coffee Shop, a modern Android application where users can browse and 
   <img src="https://github.com/user-attachments/assets/701bdc53-68f3-47b2-b7e6-a71a65b9d20a" width="300" />
 </p>
 
-## 📱 Features
-🔐 User Authentication
+# 📖 Project Functionality
+User Authentication: Secure signup and login functionality powered by Firebase.
 
-Login and signup via Firebase Authentication
+Menu Exploration: Browse various coffee types with the ability to choose between Small, Medium, and Large sizes.
 
-Logout functionality from the Profile section
+Cart Management: A local-first shopping cart that allows users to add, update quantities, or remove items.
 
-## 🛍️ Coffee Menu
+User Profile: Access account details and manage session logout.
 
-Browse a variety of coffee products
-
-Choose between Small, Medium, and Large sizes
-
-🛒 Cart Management
-
-Add, update, or remove coffee items
-
-Cart items are saved locally using Room database
-
-Quantity adjustments with plus/minus buttons
-
-## 👤 User Profile
-
-View user email
-
-Logout button
-
-## Dependencies
+# 🛠 Tech Stack
 Language: Kotlin
 
-IDE: Android Studio
+Database: Room (Local SQL persistence)
 
-Architecture: MVVM (optional)
+Backend/Auth: Firebase Authentication
 
-Firebase Auth: For login/signup
+Image Loading: Picasso
 
-Room Database: For cart persistence
+Navigation: Android Jetpack Navigation Component
 
-Navigation Component: Fragment-based navigation
+UI Binding: View Binding for safer view interactions
 
-Picasso: Load coffee images from URLs
+# 🤖 AI Integration & Implementation
+Fixing Bugs: When I had errors with the database, I used AI to find the mistakes and suggest better ways to write the code.
 
-View Binding: Simplified view references
+Testing: I used AI to generate test cases for the shopping cart to make sure adding and removing items works perfectly.
 
-## 🚀 Getting Started
+# 🚀 Future Improvements
+
+Favorites List: I want to add a "Heart" button so users can save their favorite coffee for later.
+
+Payment System: Add a real payment system like Google Pay.
+
+Dark Mode: Add a dark theme to make the app look better at night.
+
+## ✔ Getting Started
 ### Clone the repository:
 
 bash
