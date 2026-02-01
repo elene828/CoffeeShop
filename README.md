@@ -41,7 +41,7 @@ Payment System: Add a real payment system like Google Pay.
 
 Dark Mode: Add a dark theme to make the app look better at night.
 
-## ✔ Getting Started
+# ✔ Getting Started
 ### Clone the repository:
 
 bash
@@ -56,5 +56,5 @@ File > Open > Select the project folder
 
 Select a device or emulator and press ▶️ Run
 
-## 🙌 Credits
+# 🙌 Credits
 Created by Elene Gachechiladze and Tatu Atanelishvili using Android Studio and Kotlin.
