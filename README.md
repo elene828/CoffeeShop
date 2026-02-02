@@ -15,7 +15,7 @@ Cart Management: A local-first shopping cart that allows users to add, update qu
 
 User Profile: Access account details and manage session logout.
 
-# 🛠 Tech Stack
+# ⌨ Tech Stack
 Language: Kotlin
 
 Database: Room (Local SQL persistence)
@@ -28,12 +28,15 @@ Navigation: Android Jetpack Navigation Component
 
 UI Binding: View Binding for safer view interactions
 
-# 🤖 AI Integration & Implementation
-Fixing Bugs: When I had errors with the database, I used AI to find the mistakes and suggest better ways to write the code.
+# 👨‍💻 AI Integration & Implementation
 
-Testing: I used AI to generate test cases for the shopping cart to make sure adding and removing items works perfectly.
+Bug Fixing:
+When issues arose with the database, I used AI tools to identify the root causes and suggest more efficient and reliable ways to structure and write the code.
 
-# 🚀 Future Improvements
+Testing:
+I leveraged AI to generate comprehensive test cases for the shopping cart feature, ensuring that adding and removing items works flawlessly under different scenarios.
+
+# 🖊 Future Improvements
 
 Favorites List: I want to add a "Heart" button so users can save their favorite coffee for later.
 
